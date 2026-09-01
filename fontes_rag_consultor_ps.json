@@ -1,112 +1,34 @@
-[
-  {
-    "titulo": "Destaques das Diretrizes da AHA para RCP e ACE",
-    "autor": "American Heart Association (AHA)",
-    "ano": 2020,
-    "url_pdf": "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-2020/highlights/hghlghts_2020eccguidelines_portuguese.pdf",
-    "resumo": "Apresenta as normas globais atualizadas para Reanimação Cardiopulmonar (RCP), essencial para o agente orientar manobras torácicas em casos de vítimas inconscientes e sem respiração.",
-    "data_insercao": "2026-08-25T19:00:00.000Z",
-    "status": "Pendente",
-    "embedding_status": "pending",
-    "metadata": {
-      "tema": [
-        "rcp",
-        "suporte_basico_de_vida"
-      ],
-      "nivel": "intermediario",
-      "idioma": "pt",
-      "contexto_educacional": "atendimento_pre_hospitalar",
-      "tipo_documento": "diretriz",
-      "fonte": "heart.org",
-      "licenca": "open_access"
+{
+  "artigos": [
+    {
+      "titulo": "Protocolos de Suporte Básico de Vida - SAMU 192",
+      "autor": "Ministério da Saúde",
+      "ano": 2016,
+      "link_pdf": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-basico-de-vida-1-2.pdf/@@download/file"
+    },
+    {
+      "titulo": "Destaques das Diretrizes de RCP e ACE de 2020",
+      "autor": "American Heart Association (AHA)",
+      "ano": 2020,
+      "link_pdf": "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/Highlights/Hghlghts_2020ECCGuidelines_Portuguese.pdf"
+    },
+    {
+      "titulo": "Manual de Primeiros Socorros",
+      "autor": "Fundação Oswaldo Cruz (FIOCRUZ)",
+      "ano": 2003,
+      "link_pdf": "http://www.fiocruz.br/biosseguranca/Bis/manuais/biosseguranca/manualdeprimeirossocorros.pdf"
+    },
+    {
+      "titulo": "Cartilha de Primeiros Socorros",
+      "autor": "Secretaria de Estado de Planejamento e Administração (SEPLAD - PA)",
+      "ano": 2020,
+      "link_pdf": "https://seplad.pa.gov.br/wp-content/uploads/2020/04/Cartilha_de_primeiros_socorros.pdf"
+    },
+    {
+      "titulo": "Cartilha de Primeiros Socorros",
+      "autor": "Universidade José do Rosário Vellano (UNIFENAS)",
+      "ano": 2019,
+      "link_pdf": "https://www3.unifenas.br/extensao/publicacoes/cartilha/CartilhaPrimeirosSocorrosUNIVIDA.pdf"
     }
-  },
-  {
-    "titulo": "Protocolo de Suporte Básico de Vida",
-    "autor": "Ministério da Saúde / SAMU 192",
-    "ano": 2016,
-    "url_pdf": "https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_suporte_basico_vida.pdf",
-    "resumo": "Fornece fluxogramas oficiais do SAMU para atendimento pré-hospitalar, fundamentais para o agente calibrar quando instruir o usuário a ligar para o 192.",
-    "data_insercao": "2026-08-25T19:00:00.000Z",
-    "status": "Pendente",
-    "embedding_status": "pending",
-    "metadata": {
-      "tema": [
-        "samu",
-        "emergencia_medica"
-      ],
-      "nivel": "basico",
-      "idioma": "pt",
-      "contexto_educacional": "atendimento_pre_hospitalar",
-      "tipo_documento": "protocolo",
-      "fonte": "gov.br",
-      "licenca": "open_access"
-    }
-  },
-  {
-    "titulo": "Manual de Primeiros Socorros",
-    "autor": "Fundação Oswaldo Cruz (Fiocruz)",
-    "ano": 2020,
-    "url_pdf": "https://www.fiocruz.br/biosseguranca/Bis/manuais/primeiros_socorros.pdf",
-    "resumo": "Descreve procedimentos não invasivos para pequenos acidentes e estabilização de vítimas, alinhado à restrição do agente de não orientar procedimentos invasivos.",
-    "data_insercao": "2026-08-25T19:00:00.000Z",
-    "status": "Pendente",
-    "embedding_status": "pending",
-    "metadata": {
-      "tema": [
-        "primeiros_socorros",
-        "estabilizacao"
-      ],
-      "nivel": "basico",
-      "idioma": "pt",
-      "contexto_educacional": "saude_publica",
-      "tipo_documento": "manual",
-      "fonte": "fiocruz.br",
-      "licenca": "open_access"
-    }
-  },
-  {
-    "titulo": "Stop the Bleed - Controle de Hemorragias (Versão BR)",
-    "autor": "American College of Surgeons",
-    "ano": 2018,
-    "url_pdf": "https://www.stopthebleed.org/media/pdf/STB_Booklet_PT.pdf",
-    "resumo": "Guia visual sobre como controlar sangramentos intensos usando compressão direta e torniquetes, útil para gerar os passos numerados em casos de traumas graves.",
-    "data_insercao": "2026-08-25T19:00:00.000Z",
-    "status": "Pendente",
-    "embedding_status": "pending",
-    "metadata": {
-      "tema": [
-        "hemorragia",
-        "trauma"
-      ],
-      "nivel": "intermediario",
-      "idioma": "pt",
-      "contexto_educacional": "atendimento_pre_hospitalar",
-      "tipo_documento": "guia",
-      "fonte": "stopthebleed.org",
-      "licenca": "open_access"
-    }
-  },
-  {
-    "titulo": "Cartilha de Primeiros Socorros: Prevenção de Engasgo",
-    "autor": "Ministério da Saúde",
-    "ano": 2021,
-    "url_pdf": "https://bvsms.saude.gov.br/bvs/cartilhas/prevencao_engasgo.pdf",
-    "resumo": "Material específico sobre a Manobra de Heimlich para diferentes idades, crucial para o agente responder a emergências de obstrução das vias aéreas (engasgo).",
-    "data_insercao": "2026-08-25T19:00:00.000Z",
-    "status": "Pendente",
-    "embedding_status": "pending",
-    "metadata": {
-      "tema": [
-        "engasgo",
-        "manobra_de_heimlich"
-      ],
-      "nivel": "basico",
-      "idioma": "pt",
-      "contexto_educacional": "saude_publica",
-      "tipo_documento": "cartilha",
-      "fonte": "gov.br",
-      "licenca": "open_access"
-    }
-  }
-]
+  ]
+}
