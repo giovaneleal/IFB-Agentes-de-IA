@@ -1,4 +1,5 @@
 {
+  "artigos": [
     {
       "titulo": "Cartilha de Primeiros Socorros",
       "autor": "Secretaria de Estado de Planejamento e Administração (SEPLAD - PA)",
@@ -29,4 +30,5 @@
       "ano": 2020,
       "link_pdf": "https://saocamilo-sp.br/_app/views/publicacoes/outraspublicacoes/Primeiros%20Socorros_Vers%C3%A3o%20Final.pdf"
     }
+  ]
 }
