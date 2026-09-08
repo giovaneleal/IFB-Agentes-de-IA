@@ -1,23 +1,4 @@
 {
-  "artigos": [
-    {
-      "titulo": "Protocolos de Suporte Básico de Vida - SAMU 192",
-      "autor": "Ministério da Saúde",
-      "ano": 2016,
-      "link_pdf": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/protocolo-de-suporte-basico-de-vida-1-2.pdf/@@download/file"
-    },
-    {
-      "titulo": "Destaques das Diretrizes de RCP e ACE de 2020",
-      "autor": "American Heart Association (AHA)",
-      "ano": 2020,
-      "link_pdf": "https://github.com/giovaneleal/IFB-Agentes-de-IA/blob/main/Destaques%20das%20Diretrizes%20de%20RCP%20e%20ACE%20de%202020.pdf"
-    },
-    {
-      "titulo": "Manual de Primeiros Socorros",
-      "autor": "Fundação Oswaldo Cruz (FIOCRUZ)",
-      "ano": 2003,
-      "link_pdf": "http://www.fiocruz.br/biosseguranca/Bis/manuais/biosseguranca/manualdeprimeirossocorros.pdf"
-    },
     {
       "titulo": "Cartilha de Primeiros Socorros",
       "autor": "Secretaria de Estado de Planejamento e Administração (SEPLAD - PA)",
@@ -25,10 +6,27 @@
       "link_pdf": "https://seplad.pa.gov.br/wp-content/uploads/2020/04/Cartilha_de_primeiros_socorros.pdf"
     },
     {
-      "titulo": "Cartilha de Primeiros Socorros",
+      "titulo": "Cartilha de Primeiros Socorros UNIVIDA",
       "autor": "Universidade José do Rosário Vellano (UNIFENAS)",
       "ano": 2019,
       "link_pdf": "https://www3.unifenas.br/extensao/publicacoes/cartilha/CartilhaPrimeirosSocorrosUNIVIDA.pdf"
+    },
+    {
+      "titulo": "Noções de Primeiros Socorros para Profissionais da Educação",
+      "autor": "Corpo de Bombeiros Militar de Santa Catarina (CBMSC)",
+      "ano": 2018,
+      "link_pdf": "https://www.cbm.sc.gov.br/index.php/biblioteca/manuais-cbmsc?download=802:nocoes-de-primeiros-socorros-para-profissionais-da-educacao-modulo-2-orientacoes-de-seguranca-e-prevencao&start=40"
+    },
+    {
+      "titulo": "Manual de Primeiros Socorros para Leigos",
+      "autor": "Prefeitura de São Paulo / SAMU",
+      "ano": 2022,
+      "link_pdf": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/MANUAL_PRIMEIROS_SOCORROS_PARA_LEIGOS.pdf"
+    },
+    {
+      "titulo": "Guia Prático de Primeiros Socorros e Prevenção de Acidentes",
+      "autor": "Centro Universitário São Camilo",
+      "ano": 2020,
+      "link_pdf": "https://saocamilo-sp.br/_app/views/publicacoes/outraspublicacoes/Primeiros%20Socorros_Vers%C3%A3o%20Final.pdf"
     }
-  ]
 }
