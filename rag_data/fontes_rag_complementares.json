@@ -1,0 +1,39 @@
+{
+  "artigos": [
+    {
+      "titulo": "SOS Pediatria: Emergências Pediátricas",
+      "autor": "Faculdades Pequeno Príncipe (FPP)",
+      "ano": 2024,
+      "nicho": "Primeiros Socorros Pediátricos e Neonatais",
+      "link_pdf": "https://fpp.edu.br/wp-content/uploads/2024/04/SOS-Pediatria-Emergencias-pediatricas_compressed.pdf"
+    },
+    {
+      "titulo": "Apostila de Primeiros Socorros - Formação de Condutores",
+      "autor": "Escola Pública de Trânsito - DETRAN/RS",
+      "ano": 2025,
+      "nicho": "Acidentes de Trânsito e Proteção de Cenário",
+      "link_pdf": "https://escola.detran.rs.gov.br/wp-content/uploads/2025/03/4.-Primeiros-Socorros_2025.pdf"
+    },
+    {
+      "titulo": "Cartilha para Tratamento de Emergência das Queimaduras",
+      "autor": "Ministério da Saúde (BVSMS)",
+      "ano": 2012,
+      "nicho": "Queimaduras",
+      "link_pdf": "https://bvsms.saude.gov.br/bvs/publicacoes/cartilha_tratamento_emergencia_queimaduras.pdf"
+    },
+    {
+      "titulo": "Manual de Segurança: Animais Venenosos e Peçonhentos",
+      "autor": "Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB)",
+      "ano": 2024,
+      "nicho": "Animais Peçonhentos e Venenosos",
+      "link_pdf": "https://unilab.edu.br/wp-content/uploads/2024/09/Manual-Animais-Peconhentos-e-VenenososV3.pdf"
+    },
+    {
+      "titulo": "Acidentes com Animais Peçonhentos: Dicas de Prevenção e Socorro",
+      "autor": "Corpo de Bombeiros da Polícia Militar de São Paulo (CBPMESP)",
+      "ano": 2021,
+      "nicho": "Animais Peçonhentos",
+      "link_pdf": "https://www.corpodebombeiros.sp.gov.br/assets/midias/folders/ACIDENTES-COM-ANIMAIS-PECONHENTOS.pdf"
+    }
+  ]
+}
