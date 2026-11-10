@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultor Virtual de Primeiros Socorros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="alerta">🚨 Emergência? Ligue <a href="tel:192">192 (SAMU)</a> ou <a href="tel:193">193 (Bombeiros)</a></div>
+
+  <header class="topo">
+    <div class="logo">✚</div>
+    <div>
+      <h1>Consultor de Primeiros Socorros 🚑</h1>
+      <p>Assistente Virtual para Orientação em Emergências</p>
+    </div>
+  </header>
+
+  <main class="chat">
+    <div class="chat-titulo">Assistente Virtual - Primeiros Socorros e SBV</div>
+    <div id="mensagens" class="mensagens" aria-live="polite"></div>
+
+    <div class="atalhos" id="atalhos">
+      <button data-msg="Uma pessoa cortou a perna e está sangrando muito. O que devo fazer?">🩸 Sangramento</button>
+      <button data-msg="Uma pessoa está engasgada e não consegue respirar. O que faço?">😮 Engasgo</button>
+      <button data-msg="Uma pessoa desmaiou na minha frente. O que devo fazer?">😵 Desmaio</button>
+      <button data-msg="Alguém se queimou com água fervente. Como devo agir?">🔥 Queimadura</button>
+      <button data-msg="Uma pessoa caiu e não responde nem respira. Como faço RCP?">❤️ Parada cardíaca / RCP</button>
+    </div>
+
+    <form id="form" class="entrada">
+      <input id="texto" type="text" placeholder="Descreva a situação ou sua dúvida..." autocomplete="off" required>
+      <button type="submit" id="enviar" aria-label="Enviar">➤</button>
+    </form>
+    <button id="nova" class="nova">Nova conversa</button>
+  </main>
+
+  <footer>IFB · Sistemas Inteligentes e Agentes de IA · Camila Souza Anderle, Gustavo Rodrigues, Giovane Alves Leal<br>
+    Este assistente é uma IA de apoio e não substitui atendimento médico profissional.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

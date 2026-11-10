@@ -1,0 +1,233 @@
+===============================================================================
+
+                     EA3 — PROJETO FINAL COMPLETO
+
+               SISTEMAS INTELIGENTES E AGENTES DE IA
+
+===============================================================================
+
+
+
+1. IDENTIFICAÇÃO DO PROJETO
+
+-------------------------------------------------------------------------------
+
+Nome do Projeto: Consultor Virtual de Primeiros Socorros
+
+
+
+Autores:
+
+Camila Souza Anderle
+
+Gustavo Rodrigues
+
+Giovane Alves Leal
+
+
+
+Professor: Leandro Vaguetti
+
+Descrição: Solução completa de Agente de IA para orientação em primeiros
+
+           socorros e Suporte Básico de Vida (SBV). Integra o comportamento do
+
+           agente (prompt com passos numerados, acionamento de 192/193 e aviso
+
+           de que não substitui atendimento médico), base de conhecimento com
+
+           RAG (documentos PDF de SBV vetorizados no Supabase), comunicação por
+
+           Webhook HTTP REST no n8n e uma aplicação web consumidora (chat).
+
+
+
+2. LINKS DE ACESSO E EXECUÇÃO (VERSÃO FINAL)
+
+-------------------------------------------------------------------------------
+
+- Aplicação Consumidora (Frontend Web - Chat):
+
+  https://giovaneleal.github.io/IFB-Agentes-de-IA/
+
+
+
+- Código-Fonte do Frontend, Base Documental (RAG) e README:
+
+  https://github.com/giovaneleal/IFB-Agentes-de-IA/
+
+
+
+- Workflow Executável no n8n (ingestão RAG + agente + webhook):
+
+  https://n8n.incluc0de.com.br/workflow/Y0yBKY9VofeO5ePj
+
+
+
+- Endpoint Webhook Chat (POST - Produção):
+
+  https://n8n.incluc0de.com.br/webhook/e016cd76-6d17-42e2-856b-e54911d36482
+
+
+
+- Teste de Requisição da API (ReqBin):
+
+  https://reqbin.com/ibjhrupf
+
+
+
+3. COMPONENTES DA SOLUÇÃO
+
+-------------------------------------------------------------------------------
+
+a) Agente de IA (n8n - AI Agent): modelo OpenAI Chat, memória por sessão
+
+   (Simple Memory vinculada ao session_id) e ferramenta de busca vetorial
+
+   (Supabase Vector Store + Embeddings OpenAI).
+
+b) Base de Conhecimento (RAG): PDFs de Suporte Básico de Vida armazenados no
+
+   GitHub. Fluxo de ingestão: GitHub -> Code (Converte JSON) -> HTTP Request ->
+
+   Extract from File (PDF) -> Chunk -> Supabase Vector Store (embeddings).
+
+c) Comunicação (Webhook): Webhook POST -> Edit Fields (normaliza user_message
+
+   e session_id) -> AI Agent -> Edit Fields1 (status, session_id, response) ->
+
+   Respond to Webhook. CORS habilitado para consumo pelo navegador.
+
+d) Aplicação Consumidora: página web (HTML, CSS e JavaScript puro) que envia
+
+   as mensagens ao webhook, mantém o session_id da conversa e exibe as
+
+   respostas formatadas em passos numerados.
+
+
+
+4. CASOS DE USO CONTEMPLADOS
+
+-------------------------------------------------------------------------------
+
+- Sangramento intenso / hemorragia
+
+- Engasgo (obstrução de vias aéreas)
+
+- Desmaio / perda de consciência
+
+- Queimaduras
+
+- Parada cardiorrespiratória e RCP
+
+- Dúvidas gerais de primeiros socorros com continuidade de conversa (memória)
+
+Todos os casos possuem atalho na interface e orientação para acionar 192 (SAMU)
+
+ou 193 (Bombeiros).
+
+
+
+5. ESPECIFICAÇÃO DA ROTA (CONTRATO)
+
+-------------------------------------------------------------------------------
+
+Método: POST | Content-Type: application/json
+
+Endpoint: https://n8n.incluc0de.com.br/webhook/e016cd76-6d17-42e2-856b-e54911d36482
+
+
+
+Entrada:
+
+- user_message (String, Obrigatório): relato da emergência ou dúvida.
+
+- session_id (String, Opcional): identificador da sessão para o histórico.
+
+
+
+Saída:
+
+- status (String): "success" ou "error".
+
+- session_id (String): identificador mantido/gerado para a conversa.
+
+- response (String): orientações em passos numerados geradas pelo agente.
+
+
+
+Exemplo de requisição:
+
+{
+
+  "user_message": "Uma pessoa desmaiou, o que faço?",
+
+  "session_id": "sessao-1793137612005"
+
+}
+
+
+
+Exemplo de resposta (HTTP 200):
+
+{
+
+  "status": "success",
+
+  "session_id": "sessao-1793137612005",
+
+  "response": "1. Verifique a segurança do local...\n2. Verifique se a pessoa está consciente...\n...\nSou uma inteligência artificial de suporte e estas diretrizes não substituem o atendimento médico profissional."
+
+}
+
+
+
+6. EVOLUÇÕES E AJUSTES EM RELAÇÃO À EA2
+
+-------------------------------------------------------------------------------
+
+- Desenvolvimento da aplicação consumidora (frontend de chat) integrada ao
+
+  webhook de produção.
+
+- Gestão de sessão no cliente: session_id gerado no navegador e reenviado a
+
+  cada mensagem, permitindo perguntas de continuação com memória.
+
+- Atalhos para os casos de uso definidos pelo grupo.
+
+- Faixa fixa com números de emergência (192/193) e tratamento de falhas de
+
+  comunicação orientando o usuário a ligar para o socorro.
+
+- Formatação das respostas do agente (listas numeradas e destaques).
+
+- Liberação de CORS no webhook para acesso direto pelo navegador.
+
+
+
+7. COMO AVALIAR / EXECUTAR
+
+-------------------------------------------------------------------------------
+
+1. Acesse a aplicação consumidora (link do item 2) ou baixe o repositório e
+
+   abra o arquivo index.html no navegador.
+
+2. Clique em um dos atalhos (ex.: "Sangramento") ou digite uma situação.
+
+3. Envie uma pergunta de continuação (ex.: "E se o sangramento não parar?")
+
+   para verificar a memória da conversa.
+
+4. Opcionalmente, teste a API diretamente pelo link do ReqBin ou via curl:
+
+   curl -X POST https://n8n.incluc0de.com.br/webhook/e016cd76-6d17-42e2-856b-e54911d36482 \
+
+        -H "Content-Type: application/json" \
+
+        -d "{\"user_message\":\"Alguém está engasgado\",\"session_id\":\"teste-1\"}"
+
+5. O workflow completo pode ser inspecionado no link do n8n (item 2).
+
+===============================================================================

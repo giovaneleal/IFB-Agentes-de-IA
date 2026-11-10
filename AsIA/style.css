@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: #f6f6f6; color: #222; }
+.alerta { background: #c62828; color: #fff; text-align: center; padding: 8px 16px; font-weight: 600; position: sticky; top: 0; z-index: 2; }
+.alerta a { color: #fff; }
+.topo { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 28px 16px 16px; }
+.logo { width: 64px; height: 64px; border-radius: 50%; background: #c62828; color: #fff; font-size: 40px; display: grid; place-items: center; }
+.topo h1 { margin: 0; font-size: 34px; color: #8e0000; }
+.topo h1 span { color: #e53935; }
+.topo p { margin: 0; color: #555; }
+.chat { max-width: 560px; margin: 0 auto; padding: 0 16px; }
+.chat-titulo { background: #cfcfc4; color: #fff; text-align: center; font-weight: 600; padding: 8px; border-radius: 12px 12px 0 0; }
+.mensagens { background: #fff; height: 420px; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.msg { max-width: 85%; padding: 12px 16px; border-radius: 16px; line-height: 1.5; font-size: 15px; word-wrap: break-word; }
+.bot { background: #ffe1e1; align-self: flex-start; border-top-left-radius: 4px; }
+.user { background: #c62828; color: #fff; align-self: flex-end; border-top-right-radius: 4px; }
+.erro { background: #fff3cd; align-self: flex-start; }
+.msg p { margin: 4px 0; }
+.msg ol, .msg ul { margin: 6px 0; padding-left: 22px; }
+.digitando { font-style: italic; color: #777; }
+.atalhos { background: #fff; display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 16px; border-top: 1px solid #eee; }
+.atalhos button { border: 1px solid #c62828; background: #fff; color: #c62828; border-radius: 16px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.atalhos button:hover { background: #c62828; color: #fff; }
+.entrada { display: flex; margin-top: 10px; }
+.entrada input { flex: 1; min-width: 0; padding: 12px 14px; font-size: 15px; border: 1px solid #ccc; border-radius: 8px 0 0 8px; outline: none; }
+.entrada button { width: 80px; border: 0; background: #c62828; color: #fff; font-size: 20px; border-radius: 0 8px 8px 0; cursor: pointer; }
+.entrada button:disabled { background: #999; cursor: wait; }
+.nova { margin: 8px 0; background: none; border: 0; color: #8e0000; text-decoration: underline; cursor: pointer; }
+footer { text-align: center; font-size: 12px; color: #777; padding: 20px 16px; }
+@media (max-width: 480px) { .topo h1 { font-size: 32px; } .mensagens { height: 55vh; } }
